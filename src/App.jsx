@@ -36,7 +36,7 @@ function App() {
       <div>
         {currentGrid>=5 && <div>
             <ReactConfetti width={width} height={height} tweenDuration={10000}/>
-            <Typography variant="h3" className="text-black text-2xl">Your Birthday Date is : {JSON.stringify(parseInt(sequence,2)) == null ? "Sorry " : parseInt(sequence,2)} &#127881;</Typography>
+            <Typography variant="h3" className="text-black text-2xl">{JSON.stringify(parseInt(sequence,2)) == 0 ? "Lagta hai Aap paida nhi hue" : "Your Birthday date is :"+parseInt(sequence,2)} &#127881;</Typography>
           </div>
         }
       </div>
